@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>「내가 한국에 온 이유」 신한대학교 외국인 유학생 자서전 프로젝트 모집 | 我为什么来到韩国 | Миний Солонгосыг зорьсон шалтгаан</title>
+<meta name="description" content="신한대학교 외국인 유학생 자서전 프로젝트 참여자 모집 (2026.9.7–9.17). 한국어·中文·Монгол">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14213D; --ink2:#1E2F55; --paper:#FFFFFF; --mist:#EEF1F4;
+  --gold:#F2B233; --gold-deep:#C98A0C; --text:#1F2429; --muted:#5B6672; --line:#D5DAE0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Pretendard Variable', Pretendard, 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans', 'Noto Sans CJK KR', 'Noto Sans CJK SC', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Microsoft YaHei', 'PingFang SC', sans-serif;color:var(--text);background:var(--paper);line-height:1.55;
+  -webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+[lang^="zh"],[lang^="zh"] *{word-break:normal}
+b{font-weight:700;color:var(--ink)}
+a{color:inherit}
+
+/* ---------- hero (book cover) ---------- */
+.cover{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.cover::before{content:"";position:absolute;left:0;top:0;bottom:0;width:14px;background:var(--gold)}
+.cover-in{padding:40px 40px 34px 52px;position:relative}
+.cover .org{font-size:15px;font-weight:600;letter-spacing:.01em;color:#C9D3E6;margin-bottom:22px}
+.cover .title{font-weight:900;line-height:1.08;letter-spacing:-.025em;font-size:56px;color:#fff}
+.cover .title .q{color:var(--gold);font-weight:900}
+.cover .tagline{margin-top:18px;font-size:20px;font-weight:500;color:#E5EAF3;max-width:34em}
+.cover .facts{margin-top:30px;display:flex;gap:0;border-top:1px solid rgba(255,255,255,.18);padding-top:18px}
+.cover .fact{flex:1;padding-right:20px}
+.cover .fact+.fact{border-left:1px solid rgba(255,255,255,.18);padding-left:20px}
+.cover .fact .k{font-size:13px;color:#A9B6CE;margin-bottom:4px}
+.cover .fact .v{font-size:20px;font-weight:700;color:#fff}
+.cover .fact .v.seats{color:var(--gold)}
+
+/* ---------- body sections ---------- */
+.sec{padding:26px 0}
+.sec+.sec{border-top:1px solid var(--line)}
+.sec h2{font-size:21px;font-weight:800;color:var(--ink);letter-spacing:-.01em;margin-bottom:12px;line-height:1.3}
+.sec h2 .sub{font-size:14px;font-weight:500;color:var(--muted);margin-left:10px;letter-spacing:0}
+.sec p{font-size:15.5px;margin-bottom:10px;max-width:42em}
+.sec p:last-child{margin-bottom:0}
+ul.list{list-style:none}
+ul.list li{position:relative;padding-left:18px;font-size:15.5px;margin-bottom:8px}
+ul.list li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;background:var(--gold);border-radius:50%}
+ul.list li:last-child{margin-bottom:0}
+.note{font-size:14px;color:var(--muted);margin-top:12px;padding:10px 14px;background:var(--mist);border-left:3px solid var(--ink)}
+
+/* language section gets emphasis: it's the one thing students worry about */
+.sec.langok{background:var(--mist);padding:22px 24px;margin:8px 0 0;border-top:0}
+.sec.langok h2{color:var(--ink)}
+
+/* steps: real sequence -> numbered */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:6px}
+.step{border:2px solid var(--ink);padding:16px 16px 18px;position:relative;background:#fff}
+.step .n{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;
+  background:var(--ink);color:var(--gold);font-weight:900;font-size:16px;margin-bottom:10px}
+.step .t{font-size:18px;font-weight:800;color:var(--ink);line-height:1.25}
+.step .m{font-size:13px;color:var(--muted);margin:5px 0 10px}
+.step .d{font-size:14.5px}
+.result{margin-top:14px;font-size:17px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:10px}
+.result::before{content:"";width:26px;height:3px;background:var(--gold)}
+
+/* apply band */
+.apply{background:var(--ink);color:#fff;padding:28px 36px 28px 52px;position:relative;display:grid;
+  grid-template-columns:1fr 150px;gap:28px;align-items:center;margin-top:26px}
+.apply::before{content:"";position:absolute;left:0;top:0;bottom:0;width:14px;background:var(--gold)}
+.apply h2{font-size:22px;font-weight:800;margin-bottom:12px;color:#fff}
+.apply .row{font-size:15.5px;margin-bottom:7px;color:#E5EAF3}
+.apply .row .k{display:inline-block;min-width:7em;color:#A9B6CE}
+.apply .url{font-weight:700;color:#fff;font-size:17px;text-decoration:none;border-bottom:2px solid var(--gold)}
+.apply .btn{display:inline-block;margin-top:14px;background:var(--gold);color:var(--ink);font-weight:800;
+  font-size:16px;padding:12px 22px;text-decoration:none}
+.apply .btn:hover{background:#FFC454}
+.apply .btn:focus-visible,.tab:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.apply .contact{margin-top:12px;font-size:14px;color:#C9D3E6}
+.apply .contact .blank{display:inline-block;border-bottom:1px dashed #A9B6CE;min-width:16em;color:#8F9DB5}
+.qr{background:#fff;padding:10px;width:150px;height:150px}
+.qr svg{display:block}
+.qrcap{font-size:12px;color:#A9B6CE;text-align:center;margin-top:8px;line-height:1.35}
+.qrbox{display:flex;flex-direction:column;align-items:center}
+.footer{padding:16px 0 0;font-size:13.5px;color:var(--muted)}
+
+body{background:#E9ECF0}
+.page{max-width:900px;margin:0 auto;background:#fff;box-shadow:0 20px 60px rgba(20,33,61,.12)}
+.tabs{position:sticky;top:0;z-index:5;display:flex;background:#fff;border-bottom:2px solid var(--ink)}
+.tab{flex:1;padding:14px 8px;border:0;background:#fff;font-family:inherit;font-size:16px;font-weight:700;
+  color:var(--muted);cursor:pointer;border-bottom:4px solid transparent;margin-bottom:-2px}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--gold)}
+.panel{display:none}
+.panel[data-active="1"]{display:block}
+.body{padding:8px 40px 36px 52px}
+@media (max-width:640px){
+  .cover-in{padding:28px 22px 26px 30px}
+  .cover .title{font-size:34px}
+  .cover .tagline{font-size:16px;margin-top:12px}
+  .cover .facts{flex-direction:column;gap:12px}
+  .cover .fact+.fact{border-left:0;padding-left:0;border-top:1px solid rgba(255,255,255,.18);padding-top:12px}
+  .body{padding:4px 20px 28px 26px}
+  .steps{grid-template-columns:1fr}
+  .apply{grid-template-columns:1fr;padding:24px 20px 24px 30px}
+  .qrbox{align-items:flex-start}
+  .sec.langok{padding:18px 18px}
+  .apply .url{font-size:15px;word-break:break-all}
+  .tab{font-size:14px;padding:12px 4px}
+}
+@media (prefers-reduced-motion:no-preference){.panel[data-active="1"]{animation:fade .25s ease}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@media print{
+  body{background:#fff}.page{box-shadow:none;max-width:none}.tabs{display:none}
+  .panel{display:block!important;page-break-after:always}
+  .apply .btn{display:none}
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="tabs" role="tablist" aria-label="Language"><button class="tab" role="tab" id="tab-ko" aria-controls="panel-ko" aria-selected="true" data-lang="ko">한국어</button><button class="tab" role="tab" id="tab-zh" aria-controls="panel-zh" aria-selected="false" data-lang="zh">中文</button><button class="tab" role="tab" id="tab-mn" aria-controls="panel-mn" aria-selected="false" data-lang="mn">Монгол</button></div>
+  <div class="panel" id="panel-ko" role="tabpanel" aria-labelledby="tab-ko" lang="ko" data-active="1">
+<section class="cover"><div class="cover-in">
+  <div class="org">신한대학교 외국인 유학생 자서전 프로젝트</div>
+  <h1 class="title"><span class="q">「</span>내가 한국에 온 이유<span class="q">」</span></h1>
+  <p class="tagline">당신의 이야기를 한 권의 책으로 만듭니다</p>
+  <div class="facts">
+    <div class="fact"><div class="k">신청 기간</div><div class="v">2026. 9. 7.(월) – 9. 17.(목)</div></div>
+    <div class="fact"><div class="k">모집 인원</div><div class="v seats">15명</div></div>
+  </div>
+</div></section>
+<div class="body">
+  <section class="sec">
+    <h2>어떤 프로그램인가요?</h2>
+    <p>여러분이 살아온 이야기를 책으로 만듭니다. 태어나 자란 곳, 한국에 오기까지의 과정, 지금 여기서 보내는 하루하루, 그리고 앞으로 가고 싶은 곳. 여러분은 <b>인터뷰에서 한 번 이야기를 들려주기만</b> 하면 됩니다. 나머지는 저희가 책으로 만들어 드립니다.</p><p>글을 잘 써야 하는 프로그램이 아닙니다. 특별한 경험이 있어야 하는 것도 아닙니다.</p>
+  </section>
+  <section class="sec langok">
+    <h2>한국어를 못해도 참여할 수 있습니다</h2>
+    <ul class="list"><li><b>중국 학생</b> — <b>인터뷰를 중국어로 진행합니다.</b> 중국어를 하는 신한대 인턴 학생이 직접 이야기를 들어드립니다.</li><li><b>몽골 학생</b> — 인터뷰는 한국어로 진행합니다. 단어가 떠오르지 않으면 몽골어로 말해도 괜찮습니다.</li><li>신청서도 <b>모국어로 쓰셔도 됩니다.</b></li></ul>
+  </section>
+  <section class="sec">
+    <h2>무엇을 받게 되나요?</h2>
+    <ul class="list"><li><b>나만의 책 1권</b> — 약 100쪽, 종이책 실물 + PDF 파일 (12월 초 전달)</li><li><b>모국어 번역본 PDF</b> — 가족에게 그대로 보여드릴 수 있습니다</li><li><b>국립중앙도서관 도서 등록</b> — 참여 학생 15명 전원이 “저자”로 등재됩니다</li><li><b>교보문고 등 온라인서점 전자책 등록 작가 경력</b> — 이름으로 검색되며, 자기소개서·이력서에 쓸 수 있습니다</li><li>여러분이 보내주신 사진 20장 내외가 책에 함께 실립니다</li></ul>
+  </section>
+  <section class="sec">
+    <h2>누가 참여할 수 있나요?</h2>
+    <ul class="list"><li>신한대학교 재학 중인 외국인 유학생 (몽골 또는 중국 국적)</li><li>한국 체류 6개월 이상</li><li><b>총 15명</b></li></ul>
+    <div class="note">※ 국적별 인원을 미리 정해두지 않았습니다. 신청서에 써 주신 <b>지원 동기와 자기소개</b>를 보고 선발합니다.</div>
+  </section>
+  <section class="sec">
+    <h2>무엇을 해야 하나요?<span class="sub">총 3단계, 약 4시간</span></h2>
+    <div class="steps"><div class="step"><div class="n">1</div><div class="t">신청서 작성</div><div class="m">구글 폼 · 40분 · 9월 7일 – 9월 17일</div><div class="d">기본 정보와 함께 <b>지원 동기</b>, <b>자기소개</b>를 모국어로 써 주세요. 각 300자 이상이면 됩니다.</div></div><div class="step"><div class="n">2</div><div class="t">인터뷰</div><div class="m">대면 1회 · 2시간 30분 – 3시간 · 10월</div><div class="d">학교에 한 번만 나오시면 됩니다. 질문지는 3일 전에 모국어 번역과 함께 미리 보내 드립니다. 사진 20장 내외도 이때까지 보내 주세요.</div></div><div class="step"><div class="n">3</div><div class="t">원고 확인</div><div class="m">이메일 · 30분 · 10월 말</div><div class="d">완성된 원고를 한국어와 모국어로 함께 보내 드립니다. 고칠 부분이나 빼고 싶은 부분을 알려 주세요.</div></div></div>
+    <div class="result">12월 초, 완성된 책을 받으시게 됩니다.</div>
+  </section>
+  <section class="sec">
+    <h2>이런 점은 안심하세요</h2>
+    <ul class="list"><li>말하고 싶지 않은 이야기는 하지 않아도 됩니다. 넘어간 질문은 그대로 넘어갑니다.</li><li>책이 인쇄되기 전에 반드시 본인 확인을 거칩니다. <b>빼달라고 하신 내용은 이유를 묻지 않고 뺍니다.</b></li><li>통합본 300부는 <b>교내에만 비치</b>되며 외부에 판매하지 않습니다.</li><li>전자책 공개는 <b>본인이 동의한 경우에만</b> 진행합니다.</li></ul>
+  </section>
+</div>
+<section class="apply">
+  <div>
+    <h2>신청 방법</h2>
+    <div class="row"><span class="k">신청 기간</span> 2026년 9월 7일(월) – 9월 17일(목)</div>
+    <div class="row"><span class="k">신청 링크</span> <a class="url" href="https://forms.gle/oXy3ZS4z6XwDqReZ8">forms.gle/oXy3ZS4z6XwDqReZ8</a></div>
+    <a class="btn" href="https://forms.gle/oXy3ZS4z6XwDqReZ8" target="_blank" rel="noopener">구글 폼으로 신청하기</a>
+    <div class="contact">문의 &nbsp;<span class="blank">담당자 이름 · 연락처를 입력하세요</span></div>
+  </div>
+  <div class="qrbox"><div class="qr"><svg width="100%" height="100%" version="1.1" viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg"><path d="M1,1H2V2H1zM2,1H3V2H2zM3,1H4V2H3zM4,1H5V2H4zM5,1H6V2H5zM6,1H7V2H6zM7,1H8V2H7zM10,1H11V2H10zM11,1H12V2H11zM12,1H13V2H12zM13,1H14V2H13zM15,1H16V2H15zM18,1H19V2H18zM23,1H24V2H23zM24,1H25V2H24zM25,1H26V2H25zM26,1H27V2H26zM27,1H28V2H27zM28,1H29V2H28zM29,1H30V2H29zM1,2H2V3H1zM7,2H8V3H7zM17,2H18V3H17zM21,2H22V3H21zM23,2H24V3H23zM29,2H30V3H29zM1,3H2V4H1zM3,3H4V4H3zM4,3H5V4H4zM5,3H6V4H5zM7,3H8V4H7zM10,3H11V4H10zM12,3H13V4H12zM15,3H16V4H15zM16,3H17V4H16zM18,3H19V4H18zM19,3H20V4H19zM20,3H21V4H20zM23,3H24V4H23zM25,3H26V4H25zM26,3H27V4H26zM27,3H28V4H27zM29,3H30V4H29zM1,4H2V5H1zM3,4H4V5H3zM4,4H5V5H4zM5,4H6V5H5zM7,4H8V5H7zM10,4H11V5H10zM13,4H14V5H13zM14,4H15V5H14zM18,4H19V5H18zM19,4H20V5H19zM20,4H21V5H20zM21,4H22V5H21zM23,4H24V5H23zM25,4H26V5H25zM26,4H27V5H26zM27,4H28V5H27zM29,4H30V5H29zM1,5H2V6H1zM3,5H4V6H3zM4,5H5V6H4zM5,5H6V6H5zM7,5H8V6H7zM10,5H11V6H10zM21,5H22V6H21zM23,5H24V6H23zM25,5H26V6H25zM26,5H27V6H26zM27,5H28V6H27zM29,5H30V6H29zM1,6H2V7H1zM7,6H8V7H7zM9,6H10V7H9zM10,6H11V7H10zM13,6H14V7H13zM16,6H17V7H16zM18,6H19V7H18zM20,6H21V7H20zM23,6H24V7H23zM29,6H30V7H29zM1,7H2V8H1zM2,7H3V8H2zM3,7H4V8H3zM4,7H5V8H4zM5,7H6V8H5zM6,7H7V8H6zM7,7H8V8H7zM9,7H10V8H9zM11,7H12V8H11zM13,7H14V8H13zM15,7H16V8H15zM17,7H18V8H17zM19,7H20V8H19zM21,7H22V8H21zM23,7H24V8H23zM24,7H25V8H24zM25,7H26V8H25zM26,7H27V8H26zM27,7H28V8H27zM28,7H29V8H28zM29,7H30V8H29zM10,8H11V9H10zM11,8H12V9H11zM13,8H14V9H13zM14,8H15V9H14zM16,8H17V9H16zM17,8H18V9H17zM18,8H19V9H18zM19,8H20V9H19zM1,9H2V10H1zM4,9H5V10H4zM6,9H7V10H6zM7,9H8V10H7zM9,9H10V10H9zM10,9H11V10H10zM12,9H13V10H12zM13,9H14V10H13zM15,9H16V10H15zM16,9H17V10H16zM19,9H20V10H19zM20,9H21V10H20zM21,9H22V10H21zM22,9H23V10H22zM24,9H25V10H24zM1,10H2V11H1zM2,10H3V11H2zM3,10H4V11H3zM4,10H5V11H4zM5,10H6V11H5zM6,10H7V11H6zM8,10H9V11H8zM9,10H10V11H9zM12,10H13V11H12zM14,10H15V11H14zM18,10H19V11H18zM19,10H20V11H19zM21,10H22V11H21zM23,10H24V11H23zM26,10H27V11H26zM29,10H30V11H29zM3,11H4V12H3zM5,11H6V12H5zM7,11H8V12H7zM10,11H11V12H10zM12,11H13V12H12zM14,11H15V12H14zM15,11H16V12H15zM20,11H21V12H20zM21,11H22V12H21zM24,11H25V12H24zM25,11H26V12H25zM26,11H27V12H26zM27,11H28V12H27zM28,11H29V12H28zM1,12H2V13H1zM4,12H5V13H4zM5,12H6V13H5zM8,12H9V13H8zM13,12H14V13H13zM14,12H15V13H14zM20,12H21V13H20zM21,12H22V13H21zM23,12H24V13H23zM24,12H25V13H24zM25,12H26V13H25zM27,12H28V13H27zM28,12H29V13H28zM1,13H2V14H1zM7,13H8V14H7zM8,13H9V14H8zM10,13H11V14H10zM15,13H16V14H15zM16,13H17V14H16zM18,13H19V14H18zM20,13H21V14H20zM23,13H24V14H23zM26,13H27V14H26zM28,13H29V14H28zM29,13H30V14H29zM1,14H2V15H1zM2,14H3V15H2zM4,14H5V15H4zM5,14H6V15H5zM8,14H9V15H8zM10,14H11V15H10zM14,14H15V15H14zM15,14H16V15H15zM16,14H17V15H16zM19,14H20V15H19zM21,14H22V15H21zM22,14H23V15H22zM1,15H2V16H1zM2,15H3V16H2zM3,15H4V16H3zM6,15H7V16H6zM7,15H8V16H7zM8,15H9V16H8zM12,15H13V16H12zM13,15H14V16H13zM14,15H15V16H14zM15,15H16V16H15zM19,15H20V16H19zM21,15H22V16H21zM22,15H23V16H22zM24,15H25V16H24zM26,15H27V16H26zM27,15H28V16H27zM28,15H29V16H28zM29,15H30V16H29zM2,16H3V17H2zM3,16H4V17H3zM4,16H5V17H4zM10,16H11V17H10zM11,16H12V17H11zM12,16H13V17H12zM16,16H17V17H16zM17,16H18V17H17zM18,16H19V17H18zM21,16H22V17H21zM22,16H23V17H22zM23,16H24V17H23zM24,16H25V17H24zM26,16H27V17H26zM28,16H29V17H28zM1,17H2V18H1zM7,17H8V18H7zM9,17H10V18H9zM12,17H13V18H12zM14,17H15V18H14zM18,17H19V18H18zM19,17H20V18H19zM21,17H22V18H21zM22,17H23V18H22zM24,17H25V18H24zM28,17H29V18H28zM5,18H6V19H5zM8,18H9V19H8zM9,18H10V19H9zM11,18H12V19H11zM12,18H13V19H12zM13,18H14V19H13zM14,18H15V19H14zM15,18H16V19H15zM17,18H18V19H17zM19,18H20V19H19zM22,18H23V19H22zM23,18H24V19H23zM24,18H25V19H24zM26,18H27V19H26zM29,18H30V19H29zM1,19H2V20H1zM3,19H4V20H3zM4,19H5V20H4zM5,19H6V20H5zM7,19H8V20H7zM8,19H9V20H8zM10,19H11V20H10zM12,19H13V20H12zM15,19H16V20H15zM17,19H18V20H17zM18,19H19V20H18zM22,19H23V20H22zM23,19H24V20H23zM24,19H25V20H24zM28,19H29V20H28zM29,19H30V20H29zM3,20H4V21H3zM4,20H5V21H4zM5,20H6V21H5zM6,20H7V21H6zM9,20H10V21H9zM11,20H12V21H11zM12,20H13V21H12zM15,20H16V21H15zM17,20H18V21H17zM18,20H19V21H18zM20,20H21V21H20zM21,20H22V21H21zM25,20H26V21H25zM28,20H29V21H28zM29,20H30V21H29zM1,21H2V22H1zM3,21H4V22H3zM7,21H8V22H7zM9,21H10V22H9zM10,21H11V22H10zM11,21H12V22H11zM12,21H13V22H12zM13,21H14V22H13zM18,21H19V22H18zM20,21H21V22H20zM21,21H22V22H21zM22,21H23V22H22zM23,21H24V22H23zM24,21H25V22H24zM25,21H26V22H25zM27,21H28V22H27zM9,22H10V23H9zM12,22H13V23H12zM15,22H16V23H15zM16,22H17V23H16zM17,22H18V23H17zM19,22H20V23H19zM20,22H21V23H20zM21,22H22V23H21zM25,22H26V23H25zM27,22H28V23H27zM28,22H29V23H28zM29,22H30V23H29zM1,23H2V24H1zM2,23H3V24H2zM3,23H4V24H3zM4,23H5V24H4zM5,23H6V24H5zM6,23H7V24H6zM7,23H8V24H7zM11,23H12V24H11zM17,23H18V24H17zM19,23H20V24H19zM21,23H22V24H21zM23,23H24V24H23zM25,23H26V24H25zM28,23H29V24H28zM1,24H2V25H1zM7,24H8V25H7zM9,24H10V25H9zM10,24H11V25H10zM11,24H12V25H11zM12,24H13V25H12zM15,24H16V25H15zM16,24H17V25H16zM20,24H21V25H20zM21,24H22V25H21zM25,24H26V25H25zM26,24H27V25H26zM27,24H28V25H27zM29,24H30V25H29zM1,25H2V26H1zM3,25H4V26H3zM4,25H5V26H4zM5,25H6V26H5zM7,25H8V26H7zM10,25H11V26H10zM11,25H12V26H11zM18,25H19V26H18zM21,25H22V26H21zM22,25H23V26H22zM23,25H24V26H23zM24,25H25V26H24zM25,25H26V26H25zM29,25H30V26H29zM1,26H2V27H1zM3,26H4V27H3zM4,26H5V27H4zM5,26H6V27H5zM7,26H8V27H7zM9,26H10V27H9zM11,26H12V27H11zM12,26H13V27H12zM13,26H14V27H13zM14,26H15V27H14zM18,26H19V27H18zM19,26H20V27H19zM20,26H21V27H20zM23,26H24V27H23zM24,26H25V27H24zM25,26H26V27H25zM26,26H27V27H26zM27,26H28V27H27zM28,26H29V27H28zM1,27H2V28H1zM3,27H4V28H3zM4,27H5V28H4zM5,27H6V28H5zM7,27H8V28H7zM14,27H15V28H14zM17,27H18V28H17zM20,27H21V28H20zM25,27H26V28H25zM26,27H27V28H26zM27,27H28V28H27zM29,27H30V28H29zM1,28H2V29H1zM7,28H8V29H7zM10,28H11V29H10zM11,28H12V29H11zM12,28H13V29H12zM13,28H14V29H13zM16,28H17V29H16zM17,28H18V29H17zM18,28H19V29H18zM19,28H20V29H19zM20,28H21V29H20zM21,28H22V29H21zM23,28H24V29H23zM24,28H25V29H24zM25,28H26V29H25zM28,28H29V29H28zM1,29H2V30H1zM2,29H3V30H2zM3,29H4V30H3zM4,29H5V30H4zM5,29H6V30H5zM6,29H7V30H6zM7,29H8V30H7zM9,29H10V30H9zM10,29H11V30H10zM11,29H12V30H11zM12,29H13V30H12zM14,29H15V30H14zM15,29H16V30H15zM21,29H22V30H21zM24,29H25V30H24zM25,29H26V30H25zM26,29H27V30H26zM28,29H29V30H28z" id="qr-path" fill="#000000" fill-opacity="1" fill-rule="nonzero" stroke="none"/></svg></div><div class="qrcap">QR 코드를 찍으면 신청 폼으로 연결됩니다</div></div>
+  
+</section><div class="body"><div class="footer">주관 신한대학교 · 수행 레페토AI</div></div></div><div class="panel" id="panel-zh" role="tabpanel" aria-labelledby="tab-zh" lang="zh-CN" data-active="0">
+<section class="cover"><div class="cover-in">
+  <div class="org">新韩大学外国留学生自传项目</div>
+  <h1 class="title"><span class="q">「</span>我为什么来到韩国<span class="q">」</span></h1>
+  <p class="tagline">把你的故事做成一本书</p>
+  <div class="facts">
+    <div class="fact"><div class="k">申请期间</div><div class="v">2026. 9. 7.（周一）– 9. 17.（周四）</div></div>
+    <div class="fact"><div class="k">招募人数</div><div class="v seats">15名</div></div>
+  </div>
+</div></section>
+<div class="body">
+  <section class="sec">
+    <h2>这是什么项目？</h2>
+    <p>我们把你走过的人生做成一本书。出生成长的地方、来到韩国的过程、如今在这里度过的每一天，以及你想去的远方。你只需要<b>在采访中讲一次自己的故事</b>，剩下的由我们做成书。</p><p>这不是需要文笔的项目，也不需要你有什么特别的经历。</p>
+  </section>
+  <section class="sec langok">
+    <h2>不会韩语也可以参加</h2>
+    <ul class="list"><li><b>中国学生</b> — <b>采访用中文进行。</b>由会中文的新韩大学实习生当面听你讲。</li><li><b>蒙古学生</b> — 采访用韩语进行。想不起单词时，用蒙古语说也没关系。</li><li>申请表也<b>用母语填写即可。</b></li><li>完成的书会以<b>韩语和母语两种版本</b>交给你。</li></ul>
+  </section>
+  <section class="sec">
+    <h2>你会得到什么？</h2>
+    <ul class="list"><li><b>属于你自己的一本书</b> — 约100页，纸质书实物 + PDF文件（12月初交付）</li><li><b>母语翻译版PDF</b> — 可以直接拿给家人看</li><li><b>国立中央图书馆图书登记</b> — 15名参与学生全部登记为“作者”</li><li><b>教保文库电子书注册作家经历</b> — 可以用姓名检索，也可以写进自我介绍书和简历</li><li>你提供的20张左右照片会一起收录在书中</li></ul>
+  </section>
+  <section class="sec">
+    <h2>谁可以参加？</h2>
+    <ul class="list"><li>在新韩大学<b>大学院</b>就读的外国留学生（蒙古或中国国籍）</li><li>在韩停留6个月以上</li><li><b>共15名</b></li></ul>
+    <div class="note">※ 我们没有预先分配各国籍的名额。将根据申请表中的<b>申请动机和自我介绍</b>进行选拔。</div>
+  </section>
+  <section class="sec">
+    <h2>需要做什么？<span class="sub">共3个阶段，约4小时</span></h2>
+    <div class="steps"><div class="step"><div class="n">1</div><div class="t">填写申请表</div><div class="m">谷歌表单 · 40分钟 · 9月7日 – 9月17日</div><div class="d">除基本信息外，请用母语写下<b>申请动机</b>和<b>自我介绍</b>，各300–500字即可。</div></div><div class="step"><div class="n">2</div><div class="t">采访</div><div class="m">当面1次 · 2小时30分 – 3小时 · 10月</div><div class="d">只需要来学校一次。问题清单会在3天前连同母语翻译一起发给你。20张左右的照片也请在此之前发送。</div></div><div class="step"><div class="n">3</div><div class="t">确认原稿</div><div class="m">邮件 · 30分钟 · 10月末</div><div class="d">我们会把完成的原稿以韩语和母语一起发给你。请告诉我们需要修改或希望删除的部分。</div></div></div>
+    <div class="result">12月初，你将拿到完成的书。</div>
+  </section>
+  <section class="sec">
+    <h2>这些请放心</h2>
+    <ul class="list"><li>不想说的事情可以不说。跳过的问题就直接跳过。</li><li>印刷之前一定会经过本人确认。<b>你要求删除的内容，我们不问理由就删除。</b></li><li>可以使用<b>笔名</b>代替实名。</li><li>合集300册<b>只在校内陈列</b>，不对外销售。</li><li>电子书公开<b>仅在本人同意的情况下</b>进行。</li></ul>
+  </section>
+</div>
+<section class="apply">
+  <div>
+    <h2>申请方法</h2>
+    <div class="row"><span class="k">申请期间</span> 2026年9月7日（周一）– 9月17日（周四）</div>
+    <div class="row"><span class="k">申请链接</span> <a class="url" href="https://forms.gle/oXy3ZS4z6XwDqReZ8">forms.gle/oXy3ZS4z6XwDqReZ8</a></div>
+    <a class="btn" href="https://forms.gle/oXy3ZS4z6XwDqReZ8" target="_blank" rel="noopener">通过谷歌表单申请</a>
+    <div class="contact">咨询 &nbsp;<span class="blank">请填写负责人姓名·联系方式</span></div>
+  </div>
+  <div class="qrbox"><div class="qr"><svg width="100%" height="100%" version="1.1" viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg"><path d="M1,1H2V2H1zM2,1H3V2H2zM3,1H4V2H3zM4,1H5V2H4zM5,1H6V2H5zM6,1H7V2H6zM7,1H8V2H7zM10,1H11V2H10zM11,1H12V2H11zM12,1H13V2H12zM13,1H14V2H13zM15,1H16V2H15zM18,1H19V2H18zM23,1H24V2H23zM24,1H25V2H24zM25,1H26V2H25zM26,1H27V2H26zM27,1H28V2H27zM28,1H29V2H28zM29,1H30V2H29zM1,2H2V3H1zM7,2H8V3H7zM17,2H18V3H17zM21,2H22V3H21zM23,2H24V3H23zM29,2H30V3H29zM1,3H2V4H1zM3,3H4V4H3zM4,3H5V4H4zM5,3H6V4H5zM7,3H8V4H7zM10,3H11V4H10zM12,3H13V4H12zM15,3H16V4H15zM16,3H17V4H16zM18,3H19V4H18zM19,3H20V4H19zM20,3H21V4H20zM23,3H24V4H23zM25,3H26V4H25zM26,3H27V4H26zM27,3H28V4H27zM29,3H30V4H29zM1,4H2V5H1zM3,4H4V5H3zM4,4H5V5H4zM5,4H6V5H5zM7,4H8V5H7zM10,4H11V5H10zM13,4H14V5H13zM14,4H15V5H14zM18,4H19V5H18zM19,4H20V5H19zM20,4H21V5H20zM21,4H22V5H21zM23,4H24V5H23zM25,4H26V5H25zM26,4H27V5H26zM27,4H28V5H27zM29,4H30V5H29zM1,5H2V6H1zM3,5H4V6H3zM4,5H5V6H4zM5,5H6V6H5zM7,5H8V6H7zM10,5H11V6H10zM21,5H22V6H21zM23,5H24V6H23zM25,5H26V6H25zM26,5H27V6H26zM27,5H28V6H27zM29,5H30V6H29zM1,6H2V7H1zM7,6H8V7H7zM9,6H10V7H9zM10,6H11V7H10zM13,6H14V7H13zM16,6H17V7H16zM18,6H19V7H18zM20,6H21V7H20zM23,6H24V7H23zM29,6H30V7H29zM1,7H2V8H1zM2,7H3V8H2zM3,7H4V8H3zM4,7H5V8H4zM5,7H6V8H5zM6,7H7V8H6zM7,7H8V8H7zM9,7H10V8H9zM11,7H12V8H11zM13,7H14V8H13zM15,7H16V8H15zM17,7H18V8H17zM19,7H20V8H19zM21,7H22V8H21zM23,7H24V8H23zM24,7H25V8H24zM25,7H26V8H25zM26,7H27V8H26zM27,7H28V8H27zM28,7H29V8H28zM29,7H30V8H29zM10,8H11V9H10zM11,8H12V9H11zM13,8H14V9H13zM14,8H15V9H14zM16,8H17V9H16zM17,8H18V9H17zM18,8H19V9H18zM19,8H20V9H19zM1,9H2V10H1zM4,9H5V10H4zM6,9H7V10H6zM7,9H8V10H7zM9,9H10V10H9zM10,9H11V10H10zM12,9H13V10H12zM13,9H14V10H13zM15,9H16V10H15zM16,9H17V10H16zM19,9H20V10H19zM20,9H21V10H20zM21,9H22V10H21zM22,9H23V10H22zM24,9H25V10H24zM1,10H2V11H1zM2,10H3V11H2zM3,10H4V11H3zM4,10H5V11H4zM5,10H6V11H5zM6,10H7V11H6zM8,10H9V11H8zM9,10H10V11H9zM12,10H13V11H12zM14,10H15V11H14zM18,10H19V11H18zM19,10H20V11H19zM21,10H22V11H21zM23,10H24V11H23zM26,10H27V11H26zM29,10H30V11H29zM3,11H4V12H3zM5,11H6V12H5zM7,11H8V12H7zM10,11H11V12H10zM12,11H13V12H12zM14,11H15V12H14zM15,11H16V12H15zM20,11H21V12H20zM21,11H22V12H21zM24,11H25V12H24zM25,11H26V12H25zM26,11H27V12H26zM27,11H28V12H27zM28,11H29V12H28zM1,12H2V13H1zM4,12H5V13H4zM5,12H6V13H5zM8,12H9V13H8zM13,12H14V13H13zM14,12H15V13H14zM20,12H21V13H20zM21,12H22V13H21zM23,12H24V13H23zM24,12H25V13H24zM25,12H26V13H25zM27,12H28V13H27zM28,12H29V13H28zM1,13H2V14H1zM7,13H8V14H7zM8,13H9V14H8zM10,13H11V14H10zM15,13H16V14H15zM16,13H17V14H16zM18,13H19V14H18zM20,13H21V14H20zM23,13H24V14H23zM26,13H27V14H26zM28,13H29V14H28zM29,13H30V14H29zM1,14H2V15H1zM2,14H3V15H2zM4,14H5V15H4zM5,14H6V15H5zM8,14H9V15H8zM10,14H11V15H10zM14,14H15V15H14zM15,14H16V15H15zM16,14H17V15H16zM19,14H20V15H19zM21,14H22V15H21zM22,14H23V15H22zM1,15H2V16H1zM2,15H3V16H2zM3,15H4V16H3zM6,15H7V16H6zM7,15H8V16H7zM8,15H9V16H8zM12,15H13V16H12zM13,15H14V16H13zM14,15H15V16H14zM15,15H16V16H15zM19,15H20V16H19zM21,15H22V16H21zM22,15H23V16H22zM24,15H25V16H24zM26,15H27V16H26zM27,15H28V16H27zM28,15H29V16H28zM29,15H30V16H29zM2,16H3V17H2zM3,16H4V17H3zM4,16H5V17H4zM10,16H11V17H10zM11,16H12V17H11zM12,16H13V17H12zM16,16H17V17H16zM17,16H18V17H17zM18,16H19V17H18zM21,16H22V17H21zM22,16H23V17H22zM23,16H24V17H23zM24,16H25V17H24zM26,16H27V17H26zM28,16H29V17H28zM1,17H2V18H1zM7,17H8V18H7zM9,17H10V18H9zM12,17H13V18H12zM14,17H15V18H14zM18,17H19V18H18zM19,17H20V18H19zM21,17H22V18H21zM22,17H23V18H22zM24,17H25V18H24zM28,17H29V18H28zM5,18H6V19H5zM8,18H9V19H8zM9,18H10V19H9zM11,18H12V19H11zM12,18H13V19H12zM13,18H14V19H13zM14,18H15V19H14zM15,18H16V19H15zM17,18H18V19H17zM19,18H20V19H19zM22,18H23V19H22zM23,18H24V19H23zM24,18H25V19H24zM26,18H27V19H26zM29,18H30V19H29zM1,19H2V20H1zM3,19H4V20H3zM4,19H5V20H4zM5,19H6V20H5zM7,19H8V20H7zM8,19H9V20H8zM10,19H11V20H10zM12,19H13V20H12zM15,19H16V20H15zM17,19H18V20H17zM18,19H19V20H18zM22,19H23V20H22zM23,19H24V20H23zM24,19H25V20H24zM28,19H29V20H28zM29,19H30V20H29zM3,20H4V21H3zM4,20H5V21H4zM5,20H6V21H5zM6,20H7V21H6zM9,20H10V21H9zM11,20H12V21H11zM12,20H13V21H12zM15,20H16V21H15zM17,20H18V21H17zM18,20H19V21H18zM20,20H21V21H20zM21,20H22V21H21zM25,20H26V21H25zM28,20H29V21H28zM29,20H30V21H29zM1,21H2V22H1zM3,21H4V22H3zM7,21H8V22H7zM9,21H10V22H9zM10,21H11V22H10zM11,21H12V22H11zM12,21H13V22H12zM13,21H14V22H13zM18,21H19V22H18zM20,21H21V22H20zM21,21H22V22H21zM22,21H23V22H22zM23,21H24V22H23zM24,21H25V22H24zM25,21H26V22H25zM27,21H28V22H27zM9,22H10V23H9zM12,22H13V23H12zM15,22H16V23H15zM16,22H17V23H16zM17,22H18V23H17zM19,22H20V23H19zM20,22H21V23H20zM21,22H22V23H21zM25,22H26V23H25zM27,22H28V23H27zM28,22H29V23H28zM29,22H30V23H29zM1,23H2V24H1zM2,23H3V24H2zM3,23H4V24H3zM4,23H5V24H4zM5,23H6V24H5zM6,23H7V24H6zM7,23H8V24H7zM11,23H12V24H11zM17,23H18V24H17zM19,23H20V24H19zM21,23H22V24H21zM23,23H24V24H23zM25,23H26V24H25zM28,23H29V24H28zM1,24H2V25H1zM7,24H8V25H7zM9,24H10V25H9zM10,24H11V25H10zM11,24H12V25H11zM12,24H13V25H12zM15,24H16V25H15zM16,24H17V25H16zM20,24H21V25H20zM21,24H22V25H21zM25,24H26V25H25zM26,24H27V25H26zM27,24H28V25H27zM29,24H30V25H29zM1,25H2V26H1zM3,25H4V26H3zM4,25H5V26H4zM5,25H6V26H5zM7,25H8V26H7zM10,25H11V26H10zM11,25H12V26H11zM18,25H19V26H18zM21,25H22V26H21zM22,25H23V26H22zM23,25H24V26H23zM24,25H25V26H24zM25,25H26V26H25zM29,25H30V26H29zM1,26H2V27H1zM3,26H4V27H3zM4,26H5V27H4zM5,26H6V27H5zM7,26H8V27H7zM9,26H10V27H9zM11,26H12V27H11zM12,26H13V27H12zM13,26H14V27H13zM14,26H15V27H14zM18,26H19V27H18zM19,26H20V27H19zM20,26H21V27H20zM23,26H24V27H23zM24,26H25V27H24zM25,26H26V27H25zM26,26H27V27H26zM27,26H28V27H27zM28,26H29V27H28zM1,27H2V28H1zM3,27H4V28H3zM4,27H5V28H4zM5,27H6V28H5zM7,27H8V28H7zM14,27H15V28H14zM17,27H18V28H17zM20,27H21V28H20zM25,27H26V28H25zM26,27H27V28H26zM27,27H28V28H27zM29,27H30V28H29zM1,28H2V29H1zM7,28H8V29H7zM10,28H11V29H10zM11,28H12V29H11zM12,28H13V29H12zM13,28H14V29H13zM16,28H17V29H16zM17,28H18V29H17zM18,28H19V29H18zM19,28H20V29H19zM20,28H21V29H20zM21,28H22V29H21zM23,28H24V29H23zM24,28H25V29H24zM25,28H26V29H25zM28,28H29V29H28zM1,29H2V30H1zM2,29H3V30H2zM3,29H4V30H3zM4,29H5V30H4zM5,29H6V30H5zM6,29H7V30H6zM7,29H8V30H7zM9,29H10V30H9zM10,29H11V30H10zM11,29H12V30H11zM12,29H13V30H12zM14,29H15V30H14zM15,29H16V30H15zM21,29H22V30H21zM24,29H25V30H24zM25,29H26V30H25zM26,29H27V30H26zM28,29H29V30H28z" id="qr-path" fill="#000000" fill-opacity="1" fill-rule="nonzero" stroke="none"/></svg></div><div class="qrcap">扫描二维码即可打开申请表</div></div>
+  
+</section><div class="body"><div class="footer">主办 新韩大学 · 执行 Repeto AI</div></div></div><div class="panel" id="panel-mn" role="tabpanel" aria-labelledby="tab-mn" lang="mn" data-active="0">
+<section class="cover"><div class="cover-in">
+  <div class="org">Шинхан Их Сургуулийн гадаад оюутнуудын дурсамж, намтар ном бүтээх төсөл</div>
+  <h1 class="title"><span class="q">“</span>Миний Солонгосыг зорьсон шалтгаан<span class="q">”</span></h1>
+  <p class="tagline">Таны амьдралын түүхийг бид нэгэн ном болгон эмхэтгэнэ</p>
+  <div class="facts">
+    <div class="fact"><div class="k">Бүртгэлийн хугацаа</div><div class="v">2026.9.7 (Даваа) – 9.17 (Пүрэв)</div></div>
+    <div class="fact"><div class="k">Сонгогдох тоо</div><div class="v seats">15 оюутан</div></div>
+  </div>
+</div></section>
+<div class="body">
+  <section class="sec">
+    <h2>Ямар хөтөлбөр вэ?</h2>
+    <p>Таны өдийг хүртэл туулж өнгөрүүлсэн амьдралын түүхийг ном болгон хэвлэж байна. Төрсөн нутаг, Солонгосыг зорих хүртэлх замнал, энд өнгөрүүлж буй өдөр тутмын амьдрал болон цаашдын хүсэл мөрөөдөл. Та <b>ердөө ганцхан удаа ярилцлагад оролцож, өөрийн түүхээ ярьж өгөхөд</b> л хангалттай. Үлдсэн бүх ажлыг бид хариуцан танд зориулж ном болгон бэлтгэж өгнө.</p><p>Энэ нь зохион бичих ур чадвар шаардсан эсвэл заавал онцгой туршлагатай байхыг шаардах хөтөлбөр биш юм.</p>
+  </section>
+  <section class="sec langok">
+    <h2>Солонгос хэлэндээ сайн биш байсан ч оролцох боломжтой</h2>
+    <ul class="list"><li><b>Монгол оюутнууд</b> — Ярилцлагыг солонгос хэлээр явуулна. Хэрэв тохирох солонгос үг санаанд орж ирэхгүй байвал монголоор ярьсан ч болно.</li><li><b>Хятад оюутнууд</b> — Ярилцлагыг хятад хэлээр явуулна. Хятад хэлтэй Шинхан Их Сургуулийн дадлагажигч оюутан ярилцлагыг хөтлөнө.</li><li>Бүртгэлийн анкетыг <b>эх хэлээрээ (монгол хэлээр) бөглөж болно.</b></li></ul>
+  </section>
+  <section class="sec">
+    <h2>Оролцогчдод юу олгох вэ?</h2>
+    <ul class="list"><li><b>Зөвхөн өөрийн гэсэн 1 ширхэг ном</b> — Ойролцоогоор 100 хуудастай цаасан ном болон PDF файл (12-р сарын эхээр гардуулна)</li><li><b>Эх хэл рүү орчуулсан PDF файл</b> — Гэр бүлийнхэндээ шууд үзүүлэх боломжтой</li><li><b>Солонгосын Үндэсний Төв Номын Санд албан ёсоор бүртгэх</b> — Оролцсон 15 оюутан бүгд “Зохиогч”-оор бүртгэгдэнэ</li><li><b>Kyobo Book Centre зэрэг цахим номын дэлгүүрт бүртгэлтэй зохиолчийн туршлага</b> — Нэрээр тань хайх боломжтой бөгөөд товч намтар (CV), өөрийн танилцуулгад албан ёсны туршлага болгон ашиглах боломжтой</li><li>Таны илгээсэн 20 орчим гэрэл зураг номонд хамт хэвлэгдэнэ</li></ul>
+  </section>
+  <section class="sec">
+    <h2>Хэн хамрагдах боломжтой вэ?</h2>
+    <ul class="list"><li>Шинхан Их Сургуульд суралцаж буй гадаад оюутнууд (Монгол эсвэл Хятад иргэншилтэй байх)</li><li>БНСУ-д 6 сараас дээш хугацаагаар оршин сууж буй байх</li><li><b>Нийт сонгогдох тоо: 15 оюутан</b></li></ul>
+    <div class="note">※ Улс үндэстэн бүрээр тусгайлан квот тогтоогоогүй бөгөөд анкет дээр бичсэн <b>өргөдөл гаргах болсон шалтгаан, өөрийн танилцуулга</b> дээр үндэслэн сонгон шалгаруулна.</div>
+  </section>
+  <section class="sec">
+    <h2>Танаас яг ямар оролцоо шаардагдах вэ?<span class="sub">Нийт 3 үе шат, ойролцоогоор 4 цаг</span></h2>
+    <div class="steps"><div class="step"><div class="n">1</div><div class="t">Бүртгэлийн анкет бөглөх</div><div class="m">Google Form · 40 минут · 9-р сарын 7 – 17</div><div class="d">Үндсэн мэдээллээс гадна <b>төсөлд оролцох болсон шалтгаан</b> болон <b>өөрийн танилцуулгыг</b> эх хэлээрээ бичнэ үү (тус бүр 300-аас дээш тэмдэгт байхад хангалттай).</div></div><div class="step"><div class="n">2</div><div class="t">Ярилцлага</div><div class="m">Нэг удаа биечлэн · 2 цаг 30 мин – 3 цаг · 10-р сар</div><div class="d">Их сургууль дээр зөвхөн нэг удаа ирэхэд болно. Ярилцлагын асуултуудыг 3 хоногийн өмнө эх хэлний орчуулгын хамт урьдчилан илгээнэ. Энэ хугацаанд 20 орчим гэрэл зургаа мөн илгээж өгнө үү.</div></div><div class="step"><div class="n">3</div><div class="t">Эхийг хянах</div><div class="m">Имэйлээр · 30 минут · 10-р сарын сүүл</div><div class="d">Бэлэн болсон номын нооргийг солонгос болон эх хэлээр нь хамтад нь илгээнэ. Засвар оруулах болон хасуулахыг хүссэн хэсгээ хэлж өгөөрэй.</div></div></div>
+    <div class="result">12-р сарын эхээр бэлэн болсон хэвлэмэл номоо хүлээн авна.</div>
+  </section>
+  <section class="sec">
+    <h2>Сэтгэл амар оролцох баталгаа</h2>
+    <ul class="list"><li>Ярихыг хүсээгүй сэдвээ ярихгүй байж болно. Хариулахаас татгалзсан асуултыг алгасаж цааш үргэлжлүүлнэ.</li><li>Ном хэвлэлтэд орохоос өмнө оролцогч өөрөө заавал хянаж шалгана. <b>Хасуулахыг хүссэн агуулгыг шалтгаан асуулгүйгээр хасна.</b></li><li>Нэгтгэсэн нийт 300 хувь ном нь <b>зөвхөн сургууль дотор</b> тавигдах бөгөөд олон нийтэд худалдаалахгүй.</li><li>Цахим ном болгон олон нийтэд нээлттэй байршуулах эсэхийг <b>зөвхөн оролцогчийн өөрийнх нь зөвшөөрлийн</b> үндсэн дээр шийднэ.</li></ul>
+  </section>
+</div>
+<section class="apply">
+  <div>
+    <h2>Бүртгүүлэх заавар</h2>
+    <div class="row"><span class="k">Бүртгэлийн хугацаа</span> 2026 оны 9-р сарын 7 (Даваа) – 9-р сарын 17 (Пүрэв)</div>
+    <div class="row"><span class="k">Бүртгэлийн холбоос</span> <a class="url" href="https://forms.gle/oXy3ZS4z6XwDqReZ8">forms.gle/oXy3ZS4z6XwDqReZ8</a></div>
+    <a class="btn" href="https://forms.gle/oXy3ZS4z6XwDqReZ8" target="_blank" rel="noopener">Google Form-оор бүртгүүлэх</a>
+    <div class="contact">Лавлах &nbsp;<span class="blank">Хариуцсан ажилтны нэр · холбоо барих</span></div>
+  </div>
+  <div class="qrbox"><div class="qr"><svg width="100%" height="100%" version="1.1" viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg"><path d="M1,1H2V2H1zM2,1H3V2H2zM3,1H4V2H3zM4,1H5V2H4zM5,1H6V2H5zM6,1H7V2H6zM7,1H8V2H7zM10,1H11V2H10zM11,1H12V2H11zM12,1H13V2H12zM13,1H14V2H13zM15,1H16V2H15zM18,1H19V2H18zM23,1H24V2H23zM24,1H25V2H24zM25,1H26V2H25zM26,1H27V2H26zM27,1H28V2H27zM28,1H29V2H28zM29,1H30V2H29zM1,2H2V3H1zM7,2H8V3H7zM17,2H18V3H17zM21,2H22V3H21zM23,2H24V3H23zM29,2H30V3H29zM1,3H2V4H1zM3,3H4V4H3zM4,3H5V4H4zM5,3H6V4H5zM7,3H8V4H7zM10,3H11V4H10zM12,3H13V4H12zM15,3H16V4H15zM16,3H17V4H16zM18,3H19V4H18zM19,3H20V4H19zM20,3H21V4H20zM23,3H24V4H23zM25,3H26V4H25zM26,3H27V4H26zM27,3H28V4H27zM29,3H30V4H29zM1,4H2V5H1zM3,4H4V5H3zM4,4H5V5H4zM5,4H6V5H5zM7,4H8V5H7zM10,4H11V5H10zM13,4H14V5H13zM14,4H15V5H14zM18,4H19V5H18zM19,4H20V5H19zM20,4H21V5H20zM21,4H22V5H21zM23,4H24V5H23zM25,4H26V5H25zM26,4H27V5H26zM27,4H28V5H27zM29,4H30V5H29zM1,5H2V6H1zM3,5H4V6H3zM4,5H5V6H4zM5,5H6V6H5zM7,5H8V6H7zM10,5H11V6H10zM21,5H22V6H21zM23,5H24V6H23zM25,5H26V6H25zM26,5H27V6H26zM27,5H28V6H27zM29,5H30V6H29zM1,6H2V7H1zM7,6H8V7H7zM9,6H10V7H9zM10,6H11V7H10zM13,6H14V7H13zM16,6H17V7H16zM18,6H19V7H18zM20,6H21V7H20zM23,6H24V7H23zM29,6H30V7H29zM1,7H2V8H1zM2,7H3V8H2zM3,7H4V8H3zM4,7H5V8H4zM5,7H6V8H5zM6,7H7V8H6zM7,7H8V8H7zM9,7H10V8H9zM11,7H12V8H11zM13,7H14V8H13zM15,7H16V8H15zM17,7H18V8H17zM19,7H20V8H19zM21,7H22V8H21zM23,7H24V8H23zM24,7H25V8H24zM25,7H26V8H25zM26,7H27V8H26zM27,7H28V8H27zM28,7H29V8H28zM29,7H30V8H29zM10,8H11V9H10zM11,8H12V9H11zM13,8H14V9H13zM14,8H15V9H14zM16,8H17V9H16zM17,8H18V9H17zM18,8H19V9H18zM19,8H20V9H19zM1,9H2V10H1zM4,9H5V10H4zM6,9H7V10H6zM7,9H8V10H7zM9,9H10V10H9zM10,9H11V10H10zM12,9H13V10H12zM13,9H14V10H13zM15,9H16V10H15zM16,9H17V10H16zM19,9H20V10H19zM20,9H21V10H20zM21,9H22V10H21zM22,9H23V10H22zM24,9H25V10H24zM1,10H2V11H1zM2,10H3V11H2zM3,10H4V11H3zM4,10H5V11H4zM5,10H6V11H5zM6,10H7V11H6zM8,10H9V11H8zM9,10H10V11H9zM12,10H13V11H12zM14,10H15V11H14zM18,10H19V11H18zM19,10H20V11H19zM21,10H22V11H21zM23,10H24V11H23zM26,10H27V11H26zM29,10H30V11H29zM3,11H4V12H3zM5,11H6V12H5zM7,11H8V12H7zM10,11H11V12H10zM12,11H13V12H12zM14,11H15V12H14zM15,11H16V12H15zM20,11H21V12H20zM21,11H22V12H21zM24,11H25V12H24zM25,11H26V12H25zM26,11H27V12H26zM27,11H28V12H27zM28,11H29V12H28zM1,12H2V13H1zM4,12H5V13H4zM5,12H6V13H5zM8,12H9V13H8zM13,12H14V13H13zM14,12H15V13H14zM20,12H21V13H20zM21,12H22V13H21zM23,12H24V13H23zM24,12H25V13H24zM25,12H26V13H25zM27,12H28V13H27zM28,12H29V13H28zM1,13H2V14H1zM7,13H8V14H7zM8,13H9V14H8zM10,13H11V14H10zM15,13H16V14H15zM16,13H17V14H16zM18,13H19V14H18zM20,13H21V14H20zM23,13H24V14H23zM26,13H27V14H26zM28,13H29V14H28zM29,13H30V14H29zM1,14H2V15H1zM2,14H3V15H2zM4,14H5V15H4zM5,14H6V15H5zM8,14H9V15H8zM10,14H11V15H10zM14,14H15V15H14zM15,14H16V15H15zM16,14H17V15H16zM19,14H20V15H19zM21,14H22V15H21zM22,14H23V15H22zM1,15H2V16H1zM2,15H3V16H2zM3,15H4V16H3zM6,15H7V16H6zM7,15H8V16H7zM8,15H9V16H8zM12,15H13V16H12zM13,15H14V16H13zM14,15H15V16H14zM15,15H16V16H15zM19,15H20V16H19zM21,15H22V16H21zM22,15H23V16H22zM24,15H25V16H24zM26,15H27V16H26zM27,15H28V16H27zM28,15H29V16H28zM29,15H30V16H29zM2,16H3V17H2zM3,16H4V17H3zM4,16H5V17H4zM10,16H11V17H10zM11,16H12V17H11zM12,16H13V17H12zM16,16H17V17H16zM17,16H18V17H17zM18,16H19V17H18zM21,16H22V17H21zM22,16H23V17H22zM23,16H24V17H23zM24,16H25V17H24zM26,16H27V17H26zM28,16H29V17H28zM1,17H2V18H1zM7,17H8V18H7zM9,17H10V18H9zM12,17H13V18H12zM14,17H15V18H14zM18,17H19V18H18zM19,17H20V18H19zM21,17H22V18H21zM22,17H23V18H22zM24,17H25V18H24zM28,17H29V18H28zM5,18H6V19H5zM8,18H9V19H8zM9,18H10V19H9zM11,18H12V19H11zM12,18H13V19H12zM13,18H14V19H13zM14,18H15V19H14zM15,18H16V19H15zM17,18H18V19H17zM19,18H20V19H19zM22,18H23V19H22zM23,18H24V19H23zM24,18H25V19H24zM26,18H27V19H26zM29,18H30V19H29zM1,19H2V20H1zM3,19H4V20H3zM4,19H5V20H4zM5,19H6V20H5zM7,19H8V20H7zM8,19H9V20H8zM10,19H11V20H10zM12,19H13V20H12zM15,19H16V20H15zM17,19H18V20H17zM18,19H19V20H18zM22,19H23V20H22zM23,19H24V20H23zM24,19H25V20H24zM28,19H29V20H28zM29,19H30V20H29zM3,20H4V21H3zM4,20H5V21H4zM5,20H6V21H5zM6,20H7V21H6zM9,20H10V21H9zM11,20H12V21H11zM12,20H13V21H12zM15,20H16V21H15zM17,20H18V21H17zM18,20H19V21H18zM20,20H21V21H20zM21,20H22V21H21zM25,20H26V21H25zM28,20H29V21H28zM29,20H30V21H29zM1,21H2V22H1zM3,21H4V22H3zM7,21H8V22H7zM9,21H10V22H9zM10,21H11V22H10zM11,21H12V22H11zM12,21H13V22H12zM13,21H14V22H13zM18,21H19V22H18zM20,21H21V22H20zM21,21H22V22H21zM22,21H23V22H22zM23,21H24V22H23zM24,21H25V22H24zM25,21H26V22H25zM27,21H28V22H27zM9,22H10V23H9zM12,22H13V23H12zM15,22H16V23H15zM16,22H17V23H16zM17,22H18V23H17zM19,22H20V23H19zM20,22H21V23H20zM21,22H22V23H21zM25,22H26V23H25zM27,22H28V23H27zM28,22H29V23H28zM29,22H30V23H29zM1,23H2V24H1zM2,23H3V24H2zM3,23H4V24H3zM4,23H5V24H4zM5,23H6V24H5zM6,23H7V24H6zM7,23H8V24H7zM11,23H12V24H11zM17,23H18V24H17zM19,23H20V24H19zM21,23H22V24H21zM23,23H24V24H23zM25,23H26V24H25zM28,23H29V24H28zM1,24H2V25H1zM7,24H8V25H7zM9,24H10V25H9zM10,24H11V25H10zM11,24H12V25H11zM12,24H13V25H12zM15,24H16V25H15zM16,24H17V25H16zM20,24H21V25H20zM21,24H22V25H21zM25,24H26V25H25zM26,24H27V25H26zM27,24H28V25H27zM29,24H30V25H29zM1,25H2V26H1zM3,25H4V26H3zM4,25H5V26H4zM5,25H6V26H5zM7,25H8V26H7zM10,25H11V26H10zM11,25H12V26H11zM18,25H19V26H18zM21,25H22V26H21zM22,25H23V26H22zM23,25H24V26H23zM24,25H25V26H24zM25,25H26V26H25zM29,25H30V26H29zM1,26H2V27H1zM3,26H4V27H3zM4,26H5V27H4zM5,26H6V27H5zM7,26H8V27H7zM9,26H10V27H9zM11,26H12V27H11zM12,26H13V27H12zM13,26H14V27H13zM14,26H15V27H14zM18,26H19V27H18zM19,26H20V27H19zM20,26H21V27H20zM23,26H24V27H23zM24,26H25V27H24zM25,26H26V27H25zM26,26H27V27H26zM27,26H28V27H27zM28,26H29V27H28zM1,27H2V28H1zM3,27H4V28H3zM4,27H5V28H4zM5,27H6V28H5zM7,27H8V28H7zM14,27H15V28H14zM17,27H18V28H17zM20,27H21V28H20zM25,27H26V28H25zM26,27H27V28H26zM27,27H28V28H27zM29,27H30V28H29zM1,28H2V29H1zM7,28H8V29H7zM10,28H11V29H10zM11,28H12V29H11zM12,28H13V29H12zM13,28H14V29H13zM16,28H17V29H16zM17,28H18V29H17zM18,28H19V29H18zM19,28H20V29H19zM20,28H21V29H20zM21,28H22V29H21zM23,28H24V29H23zM24,28H25V29H24zM25,28H26V29H25zM28,28H29V29H28zM1,29H2V30H1zM2,29H3V30H2zM3,29H4V30H3zM4,29H5V30H4zM5,29H6V30H5zM6,29H7V30H6zM7,29H8V30H7zM9,29H10V30H9zM10,29H11V30H10zM11,29H12V30H11zM12,29H13V30H12zM14,29H15V30H14zM15,29H16V30H15zM21,29H22V30H21zM24,29H25V30H24zM25,29H26V30H25zM26,29H27V30H26zM28,29H29V30H28z" id="qr-path" fill="#000000" fill-opacity="1" fill-rule="nonzero" stroke="none"/></svg></div><div class="qrcap">QR кодыг уншуулбал бүртгэлийн анкет нээгдэнэ</div></div>
+  
+</section><div class="body"><div class="footer">Зохион байгуулагч Шинхан Их Сургууль · Гүйцэтгэгч Репето АЙ (Repeto AI)</div></div></div>
+</div>
+<script>
+(function(){
+  var tabs=document.querySelectorAll('.tab'),panels=document.querySelectorAll('.panel');
+  function show(k){
+    tabs.forEach(function(t){t.setAttribute('aria-selected',t.dataset.lang===k?'true':'false')});
+    panels.forEach(function(p){p.dataset.active=p.id==='panel-'+k?'1':'0'});
+    document.documentElement.lang={ko:'ko',zh:'zh-CN',mn:'mn'}[k];
+    try{history.replaceState(null,'','#'+k)}catch(e){}
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){show(t.dataset.lang)})});
+  var h=location.hash.replace('#','');
+  if(!h){var n=(navigator.language||'').toLowerCase();h=n.startsWith('zh')?'zh':n.startsWith('mn')?'mn':'ko'}
+  if(['ko','zh','mn'].indexOf(h)>-1)show(h);
+})();</script>
+</body></html>
